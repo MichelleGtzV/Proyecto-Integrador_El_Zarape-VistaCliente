@@ -1,0 +1,114 @@
+body {
+    background-image: url('../../Imagenes/zarape.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-repeat: repeat-y; /* Repite la imagen verticalmente */
+    background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: rgba(128, 84, 59, 0.7); /* Color #80543B con opacidad del 70% */
+}
+
+.nav-link {
+    color: #FEF2E4; /* Color de las letras */
+    margin: 0 70px; /* Espacio entre los enlaces */
+    font-size: 1.25rem; /* Tamaño de las letras */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #FEF2E4;/* Color de las letras al estar seleccionado */
+}
+
+.nav-link.active {
+    background-color: rgba(254, 242, 228, 0.4); /* Color de fondo con opacidad al estar seleccionado */
+    border: 1px solid #FEF2E4; /* Borde al estar seleccionado */
+    padding: 8px 16px; /* Espaciado interno al estar seleccionado */
+    border-radius: 4px; /* Borde redondeado al estar seleccionado */
+}
+
+.nav-link.active a {
+    color: #FEF2E4; /* Color del texto al estar seleccionado */
+}
+
+.custom-card {
+    width: 100%; /* Ajuste del ancho de la tarjeta */
+    background-color: rgba(128, 90, 59, 0.3); /* Color #805A3B con opacidad del 70% */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+    transition: transform 0.3s ease; /* Transición suave */
+    height: 100%; /* Ajuste de altura al 100% */
+    display: flex; /* Usar flexbox para centrar contenido */
+    flex-direction: column; /* Alinear contenido en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    margin-bottom: 40px; /* Espacio entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo para los elementos absolutos dentro */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px); /* Efecto de levantar la tarjeta al pasar el ratón */
+}
+
+.custom-card-body {
+    color: #000000; /* Color de texto */
+    padding: 1.5rem; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+}
+
+.custom-card-body h5 {
+    font-size: 1.8rem; /* Tamaño del título */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+.custom-card-body p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+.custom-card-body .btn-primary {
+    background-color: rgba(128, 90, 59, 0.4); /* Color de fondo del botón con opacidad */
+    border-color: #805A3B; /* Color de borde del botón */
+}
+
+.card-img-top.custom-img {
+    width: 60%; /* Ajuste del tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    display: block; /* Asegurar que la imagen sea un bloque para centrarla */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+
+.price {
+    font-size: 1em; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    text-align: right;
+    background-color: rgba(254, 242, 228, 0.4); /* Color de fondo con opacidad */
+    border: 1px solid #FEF2E4; /* Borde */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 8px; /* Borde redondeado */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 10px; /* Posición inferior */
+    right: 10px; /* Posición derecha */
+}
+
+.btn-img {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición desde abajo según sea necesario */
+    right: 160px; /* Ajusta la posición desde la derecha según sea necesario */
+}
+
+.btn-img img {
+    width: 80px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto; /* Ajusta para mantener la proporción */
+    display: block;
+}

@@ -1,0 +1,49 @@
+body, html {
+    margin: 0; /* Elimina el margen predeterminado de los elementos body y html */
+    padding: 0; /* Elimina el relleno predeterminado de los elementos body y html */
+    font-family: Arial, sans-serif; /* Establece la familia de fuentes a Arial o una alternativa sans-serif */
+    height: 100%; /* Asegura que los elementos body y html ocupen el 100% de la altura de la ventana */
+    width: 100%; /* Asegura que los elementos body y html ocupen el 100% del ancho de la ventana */
+}
+
+.container {
+    display: flex; /* Utiliza el diseño Flexbox para el contenedor */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+    width: 100%; /* Establece el ancho del contenedor al 100% */
+    position: relative; /* Permite la posicionamiento de elementos secundarios dentro del contenedor */
+    overflow: hidden; /* Oculta el contenido que excede los límites del contenedor */
+    background: url('Imagenes/INICIO_ZARAPE.png') no-repeat center center fixed; /* Establece una imagen de fondo que no se repite, está centrada y es fija */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+}
+
+.content {
+    position: relative; /* Posiciona el contenido relativo a su posición normal */
+    text-align: center; /* Centra el texto horizontalmente */
+    z-index: 1; /* Asegura que el contenido esté por encima de otros elementos con un índice z más bajo */
+}
+
+.sombrero {
+    width: 750px; /* Establece el ancho de la imagen del sombrero */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen del sombrero */
+    margin-top: -200px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+.navigation {
+    position: absolute; /* Posiciona la navegación relativa a su ancestro posicionado más cercano */
+    bottom: 260px; /* Posiciona la navegación a 160px del fondo del contenedor */
+    left: 50%; /* Posiciona la navegación en el centro horizontal del contenedor */
+    transform: translateX(-30%); /* Desplaza la navegación un 20% a la izquierda de su posición centrada */
+}
+
+.btn-inicio {
+    background-color: #C60000; /* Establece el color de fondo del botón */
+    color: white; /* Establece el color del texto a blanco */
+    padding: 20px 30px; /* Establece un relleno de 20px verticalmente y 30px horizontalmente */
+    font-size: 20px; /* Establece el tamaño de la fuente del texto del botón */
+    text-transform: uppercase; /* Transforma el texto del botón a mayúsculas */
+    border: none; /* Elimina cualquier borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
